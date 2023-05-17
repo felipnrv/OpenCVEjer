@@ -15,10 +15,16 @@ while True:
     _, th = cv2.threshold(imagen, umbral, valor_maximo, cv2.THRESH_BINARY_INV)
     gris=cv2.cvtColor(th,cv2.COLOR_BGR2GRAY)
     contornos, _ = cv2.findContours(gris, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    print('Contornos: ',len(contornos))
+    #print('Contornos: ',len(contornos))
+    #texto = "Contornos: "+ str(len(contornos))
+
+
+
     # el -1 es para que se dibujen todos los contornos
     # el 2 es el grosor de la linea y el color es el 255,0,0
     cv2.drawContours(imagen,contornos,-1,(255,0,0),20)
+    #pone el texto de los contornos
+    #cv2.putText(imagen,texto ,(10,20),cv2.FONT_HERSHEY_SIMPLEX,0.7,(255,0,0),1)
 
     cv2.imshow('video',imagen)
     cv2.imshow('video',th)
@@ -27,7 +33,6 @@ while True:
 
         #0xFF es para que detecte el valor en una maquina x64
         # ord recibe un caracter y regresa el unicode
-
 
     if cv2.waitKey(1) & 0xFF == ord('x'):
         break
