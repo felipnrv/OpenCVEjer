@@ -3,15 +3,22 @@ import numpy as np
 import imutils
 import os
 
-umbral=100
+umbral=127
 valor_maximo=255
 
 captura = cv2.VideoCapture(0) # para que detecte la camara es 0
 
 
 while True:
-    ret,imagen = captura.read() # devuelve 2 argumentos, 1 es bool y el otro es la imagen
+    # devuelve 2 argumentos, 1 es bool y el otro es la imagen
+    ret, imagen = captura.read()
     _, th = cv2.threshold(imagen, umbral, valor_maximo, cv2.THRESH_BINARY_INV)
+    gris=cv2.cvtColor(th,cv2.COLOR_BGR2GRAY)
+    contornos, _ = cv2.findContours(gris, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    print('Contornos: ',len(contornos))
+    # el -1 es para que se dibujen todos los contornos
+    # el 2 es el grosor de la linea y el color es el 255,0,0
+    cv2.drawContours(imagen,contornos,-1,(255,0,0),20)
 
     cv2.imshow('video',imagen)
     cv2.imshow('video',th)
