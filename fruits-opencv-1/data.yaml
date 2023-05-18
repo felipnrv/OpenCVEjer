@@ -1,0 +1,14 @@
+names:
+- Apple
+- aji
+- banana
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: fruits-opencv
+  url: https://universe.roboflow.com/workspace-ghkys/fruits-opencv/dataset/1
+  version: 1
+  workspace: workspace-ghkys
+test: test/images
+train: train/images
+val: valid/images
