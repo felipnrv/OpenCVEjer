@@ -21,7 +21,7 @@ while True:
     #pone el texto de los contornos
     #cv2.putText(imagen,texto ,(10,20),cv2.FONT_HERSHEY_SIMPLEX,0.7,(255,0,0),1)
 
-    cv2.imshow('video',imagen)
+    cv2.imshow('video',imagen) # es lo que ve el usuario
     #cv2.imshow('video',th) 
 
         # saca 1 frame x seg, si es 5000 seria 1 frame cada 5 segundos,
