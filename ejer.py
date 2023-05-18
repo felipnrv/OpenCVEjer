@@ -1,9 +1,20 @@
+import os
+
 from ultralytics import YOLO
-from ultralytics.yolo.v8.detect.predict import DetectionPredictor
 import cv2
+import numpy as np
 
-model = YOLO("yolov8s.pt")
+Video = os.path.join('.','media')
 
-results = model.predict(source="0",show=True)
+video_path = os.path.join(Video,'video.mp4')
+video_path_out= '{}_out.mp4'.format(video_path)
+ret, frame = cap.read()
+H,W , _ =frame.shape
+out= cv2.VideoWriter(video_path_out,cv2.VideoWriter_fourcc(*'mp4v'), 30, (W,H))
 
-print(results)
+model_path =os.path.join('.','model','yolov8n.pt')
+
+model =YOLO(model_path)
+
+threshold = 0.5
+
