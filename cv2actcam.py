@@ -1,5 +1,7 @@
 import cv2
 
+#Para activar el venv es .\venv\Scripts\activate.bat
+
 umbral=80
 valor_maximo=255
 
