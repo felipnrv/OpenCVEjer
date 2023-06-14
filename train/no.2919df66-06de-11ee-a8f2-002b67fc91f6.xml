@@ -1,0 +1,26 @@
+<annotation>
+	<folder>collectimages</folder>
+	<filename>no.2919df66-06de-11ee-a8f2-002b67fc91f6.jpg</filename>
+	<path>D:\Feli\Estudio\Code\Proyecto\RealTimeObjectDetection\Tensorflow\workspace\images\collectimages\no.2919df66-06de-11ee-a8f2-002b67fc91f6.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gracias</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>169</xmin>
+			<ymin>404</ymin>
+			<xmax>444</xmax>
+			<ymax>480</ymax>
+		</bndbox>
+	</object>
+</annotation>
