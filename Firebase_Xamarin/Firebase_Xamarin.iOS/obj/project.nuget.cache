@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UEZgWBxd7L7NrTPYDZ1jGE60GcoxwbIWwelNt/8D64hW7LqJ9+FRl+WRfMYbn/YpUFNHbDimgk6+LcPlpwpWqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\felipe.narvaez\\Documents\\Codigo\\Firebase_Xamarin\\Firebase_Xamarin.iOS\\Firebase_Xamarin.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\felipe.narvaez\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\felipe.narvaez\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\felipe.narvaez\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
